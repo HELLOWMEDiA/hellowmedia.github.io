@@ -2,37 +2,23 @@ body {
 	background-color: #000000;
 }
 h1 {
-	font-family:montserrat; 
-	color:#ffffff; 
-	text-align:center;
+	font-family:montserrat; color:#ffffff; text-align:center;
 }
 p {
-	font-family:montserrat; 
-	color:#ffffff; 
-	text-align:center;
+	font-family:montserrat; color:#ffffff; text-align:center;
 }
 a:link {
-	color: #1155cc
-	background-color: transparent;
-	text-decoration: none;
+	color: #1155cc; background-color: transparent; text-decoration: none;
 }
 a:visited {
-	color: #1155cc
-	background-color: transparent;
-	text-decoration: none;
+	color: #1155cc; background-color: transparent; text-decoration: none;
 }
 a:hover {
-	color: #1155cc
-	background-color: transparent;
-	text-decoration: underline;
+	color: #1155cc; background-color: transparent; text-decoration: underline;
 }
 a:active {
-	color: #ffffff
-	background-color: transparent;
-	text-decoration: underline;
+	color: #ffffff; background-color: transparent; text-decoration: underline;
 }
 img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	display: block; margin-left: auto; margin-right: auto;
 }
