@@ -1,24 +1,23 @@
 body {
 	background-color: #1A2034;
 }
-h1 {
-	font-family:montserrat; color:#ffffff; text-align:center;
+.format {
+	font-family:montserrat; 
+	color:#ffffff; 
+	text-align:center;
 }
-p {
-	font-family:montserrat; color:#ffffff; text-align:center;
-}
-a:link {
+.format a:link {
 	color: #1155cc; background-color: transparent; text-decoration: none;
 }
-a:visited {
+.format a:visited {
 	color: #1155cc; background-color: transparent; text-decoration: none;
 }
-a:hover {
+.format a:hover {
 	color: #1155cc; background-color: transparent; text-decoration: underline;
 }
-a:active {
+.format a:active {
 	color: #ffffff; background-color: transparent; text-decoration: underline;
 }
-img {
+.format img {
 	display: block; margin-left: auto; margin-right: auto;
 }
