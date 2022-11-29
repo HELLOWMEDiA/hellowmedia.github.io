@@ -1,10 +1,19 @@
+@font-face {
+	font-family: montserrat;
+	src: ./fonts/montserrat-regular.ttf;
+}
+@font-face {
+	font-family: montserrat;
+	src: ./fonts/montserrat-bold.ttf;
+	font-weight: bold;
+}	
 body {
 	background-color: #1A2034;
 }
 .format {
-	font-family:montserrat; 
-	color:#ffffff; 
-	text-align:center;
+	font-family: montserrat; 
+	color: #ffffff; 
+	text-align: center;
 }
 .format a:link {
 	color: #1155cc; background-color: transparent; text-decoration: none;
