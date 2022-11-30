@@ -6,6 +6,7 @@
 	width: 26%;
 	border-radius: 10px;
 	margin: auto;
+	max-width: 484px;
 }
 
 #navbar a {
