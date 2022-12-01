@@ -1,0 +1,81 @@
+:root {
+	font-size: 16px;
+	font-family: montserrat;
+	--text-primary: #b6b6b6;
+	--text-secondary: #ececec;
+	--bg-primary: #1A2034;
+	--bg-secondary: #152D58;
+}
+
+@font-face {
+	font-family: montserrat;
+	src: ./fonts/montserrat-regular.ttf;
+}
+
+@font-face {
+	font-family: montserrat;
+	src: ./fonts/montserrat-bold.ttf;
+	font-weight: bold;
+}	
+
+body {
+	background-color: #1A2034;
+	margin: 0;
+	padding: 0;
+}
+
+.format {
+	font-family: montserrat; 
+	color: #ffffff; 
+	text-align: center;
+}
+
+.format a:link {
+	color: #1155cc; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+.format a:visited {
+	color: #1155cc; 
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+.format a:hover {
+	color: #1155cc; 
+	background-color: transparent; 
+	text-decoration: underline;
+}
+
+.format a:active {
+	color: #ffffff; 
+	background-color: transparent; 
+	text-decoration: underline;
+}
+
+.format img {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+body::-webkit-scrollbar {
+	width: 0.45rem;
+	border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #1A2034;
+	border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #3d3d3d;
+	border-radius: 10px;
+}
+
+main {
+	margin-left: 5rem;
+	padding: 1rem;
+}

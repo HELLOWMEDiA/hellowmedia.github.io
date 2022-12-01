@@ -6,3 +6,8 @@
 	background-color: #152d58;
 	border-radius: 10px;
 }
+
+.header img {
+	width: 20%;
+	height: auto;
+}
