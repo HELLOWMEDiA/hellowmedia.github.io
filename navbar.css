@@ -6,10 +6,12 @@ ul {
 	background-color: #1c1c1c;
 	border-radius: 10px;
 	font-family: montserrat;
+	position: sticky;
 }
 
 li {
 	float: left;
+	position: sticky;
 }
 
 li a, .dropbtn {
@@ -18,11 +20,13 @@ li a, .dropbtn {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	position: sticky;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
 	background-color: #3d3d3d;
 	border-radius: 10px;
+	position: sticky;
 }
 
 li.dropdown {
@@ -30,6 +34,7 @@ li.dropdown {
 	font-family: montserrat;
 	border-radius: 10px;
 	background-color: #1c1c1c;
+	position: sticky;
 }
 
 .dropdown-content {
@@ -42,10 +47,12 @@ li.dropdown {
 	font-family: montserrat;
 	background-color: #1c1c1c;
 	border-radius: 10px;
+	position: sticky;
 }
 
 .dropdown-content a:hover {background-color: #3d3d3d;}
 
 .dropdown:hover .dropdown-content {
 	display: block;
+	position: sticky;
 }
