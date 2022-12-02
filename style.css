@@ -79,3 +79,56 @@ main {
 	margin-left: 5rem;
 	padding: 1rem;
 }
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	border-radius: 10px;
+	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.column {
+	flex: 1;
+	max-width: 25%;
+	padding: 0 4px;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+div.imagedesc {
+	padding: 15px;
+	text-align: center;
+	font-family: montserrat;
+}
+
+hr.rounded {
+	border-top: 8px solid #484D5D;
+	border-radius: 5px;
+}
