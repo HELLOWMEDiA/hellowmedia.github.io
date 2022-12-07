@@ -1,33 +1,133 @@
 :root {
 	font-size: 16px;
-	font-family: montserrat;
-	--text-primary: #b6b6b6;
-	--text-secondary: #ececec;
-	--bg-primary: #1A2034;
-	--bg-secondary: #152D58;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #1A2034;
 }
 
-@font-face {
-	font-family: montserrat;
-	src: ./fonts/montserrat-regular.ttf;
+main {
+	margin-left: 5rem;
+	padding: 1rem;
 }
 
-@font-face {
-	font-family: montserrat;
-	src: ./fonts/montserrat-bold.ttf;
+.navbar {
+	position: fixed;
+	background-color: #1c1c1c;
+	transition: width 200ms ease;
+}
+
+.navbar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-item {
+	width: 100%
+}
+
+.nav-item:last-child {
+	margin-top: auto;
+}
+
+.nav-link {
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	color: #ffffff;
+	text-decoration: none;
+	filter: grayscale(100%) opacity(0.7);
+	transition: 600ms
+}
+
+.nav-link:hover {
+	filter: grayscale(0%) opacity(1);
+	background: #363636;
+}
+
+.link-text {
+	display: none;
+}
+
+.nav-link svg {
+	min-width: 2rem;
+	margin: 0 1.5rem;
+}
+
+.logo {
 	font-weight: bold;
-}	
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	text-align: center;
+	background: #1c1c1c;
+	font-size: 1.5rem;
+	letter-spacing: 0.3ch;
+	width: 100%;
+}
+
+.logo svg {
+	transform: rotate(0deg);
+	transition: transform 600ms;
+	color: #ffffff;
+}
+
+.navbar:hover .logo svg {
+	transform: rotate(-180deg);
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		bottom: 0;
+		width: 100vw;
+		height: 5rem;
+	}
+	
+	.logo {
+		display: none;
+	}
+	
+	.navbar-nav {
+		flex-direction: row;
+	}
+	
+	.nav-link {
+		justify-content: center;
+	}
+	
+	main {
+		margin: 0;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.navbar {
+	top: 0;
+	width: 5rem;
+	height: 100vh;
+	}
+	
+	.navbar:hover {
+	width: 16rem;
+	}
+
+	.navbar:hover .link-text {
+		display: inline;
+		transition: opacity 600ms
+	}
+}
 
 body {
-	background-color: #1A2034;
 	margin: 0;
 	padding: 0;
 }
 
 .format {
-	font-family: montserrat; 
 	color: #ffffff; 
 	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 .format a:link {
@@ -60,6 +160,19 @@ body {
 	margin-right: auto;
 }
 
+.header {
+	padding: 20px;
+	text-align: center;
+	color:#ffffff;
+	background-color: #152d58;
+	border-radius: 10px;
+}
+
+.header img {
+	width: 20%;
+	height: auto;
+}
+
 body::-webkit-scrollbar {
 	width: 0.45rem;
 	border-radius: 20px;
@@ -75,11 +188,6 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 }
 
-main {
-	margin-left: 5rem;
-	padding: 1rem;
-}
-
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -87,16 +195,14 @@ main {
 	border-radius: 10px;
 	justify-content: center;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: baseline;
 }
 
 .column {
 	flex: 1;
-	max-width: 25%;
+	max-width: 50%;
 	padding: 0 4px;
 	border-radius: 10px;
-	justify-content: center;
-	align-items: center;
 }
 
 .column img {
@@ -104,8 +210,6 @@ main {
 	vertical-align: middle;
 	width: 100%;
 	border-radius: 10px;
-	justify-content: center;
-	align-items: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -125,10 +229,61 @@ main {
 div.imagedesc {
 	padding: 15px;
 	text-align: center;
-	font-family: montserrat;
 }
 
 hr.rounded {
 	border-top: 8px solid #484D5D;
-	border-radius: 5px;
+	border-bottom: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-radius: 20px;
+}
+
+div.gallery {
+	border-radius: 10px
+}
+
+div.gallery:hover {
+	border-radius: 10px;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
 }
